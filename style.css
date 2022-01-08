@@ -149,7 +149,7 @@ ul{
     list-style-type: '\2714\0020\0020'; /*Colocando o simbolo de check e 2 espaços em brancos ao lado de cada versão do android. O espaço em branco é como se fosse um simbolo, por isso os dois codigos de 0020*/
     columns: 2; /* Dividindo a lista em duas colunas*/
     list-style-position: inside; /*Fazendo com que o simbolo de check e os espaços em branco fiquem dentro da box da lista*/
-    margin-left: -35px;
+    
 
 }
 
