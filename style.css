@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family:Android ;
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+}
+/*Criando variaveis com conteudos dentro para facilitar na hora de usar. Ao inves de colocar varios nomes e codigos, basta colocar o nome dado a uma propriedade.*/
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: 'Android', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: var(--fonte0);
+    background-color: var(--cor1);
+
+}
+
+p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.9em;/*Criando um espaçamento entre as linhas dos textos mais longos*/
+    margin: 15px 0px;
+    font-size: 1em;
+}
+
+strong{
+    color: var(--cor4);
+    font-weight: bold;
+    color: var(--cor4);
+    
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor5), var(--cor3));
+    padding: 15px;
+    margin: -9px -9px 0px -9px;
+}
+
+#titulo{
+    text-align: center;
+    font-family: var(--fonte1);
+    font-size: 3.5em;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    padding:10px ;
+}
+
+#subtitulo{
+    text-align: center;
+    font-family: var(--fonte0);
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 2.5px 2.5px 2.5px black;
+    padding: 10px;
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 15px;
+   
+}
+
+/*Estilizando o menu de navegação*/
+nav > a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    padding: 10px; /*Criando um espaçamento lateral entre cada uma das opções*/
+    border-radius: 5px;
+    transition-duration: 1s;/*Efeito de atarso de um link para o outro no meu*/
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor4);
+}
+
+h1{
+    font-family: var(--fonte2);
+    color: var(--cor4);
+    font-size: 1.5em;
+}
+
+.android{
+    font-family: var(--fonte2);
+    color: var(--cor4);
+    font-size: 1em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding: 3px;
+}
+
+
+
+
+main{
+    background-color: white;
+    /*Adaptando para que as linhas de leitura se tornem adaptaveis de acordo com a tela */
+    min-width: 400px;
+    max-width: 800px;
+    /**/
+    margin: auto;
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+}
+
+.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.video{
+    position: relative;
+    background-color: var(--cor4);
+    height: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+
+.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+/*Configurando e estilizando a lista*/
+ul{
+    list-style-type: '\2714\0020\0020'; /*Colocando o simbolo de check e 2 espaços em brancos ao lado de cada versão do android. O espaço em branco é como se fosse um simbolo, por isso os dois codigos de 0020*/
+    columns: 2; /* Dividindo a lista em duas colunas*/
+    list-style-position: inside; /*Fazendo com que o simbolo de check e os espaços em branco fiquem dentro da box da lista*/
+    margin-left: -35px;
+
+}
+
+h3{
+    background-color: var(--cor3);
+    font-weight: bolder;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 1em;
+    margin: 0px -10px;
+
+}
+
+aside{
+    background-color: var(--cor0);
+    padding: 0px 10px 10px 10px;
+    border-radius: 10px;
+
+}
+
+footer > p{
+    text-align: center;
+    color: white;
+}
+
+footer{
+    background-color: var(--cor5);
+    padding: -2px;
+    margin: 0px -10px -20px -10px;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--cor4);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+/*Todo link da classe externo vai conter depois o emoji em questão*/
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+
+}
+
+footer > p > a{
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
